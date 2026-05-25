@@ -154,7 +154,7 @@
             background-color: var(--secondary-color);
             box-shadow: -4px 0 12px rgba(0, 0, 0, 0.2);
             transition: right 0.3s ease;
-            z-index: 99;
+            z-index: 104;
             overflow-y: auto;
             padding: 70px 20px 20px 20px;
         }
@@ -164,7 +164,7 @@
         }
 
         .sidebar-close {
-            position: fixed;
+            position: absolute;
             top: 15px;
             right: 20px;
             background: none;
@@ -172,7 +172,7 @@
             font-size: 32px;
             color: var(--white);
             cursor: pointer;
-            z-index: 103;
+            z-index: 105;
             width: 50px;
             height: 50px;
             display: flex;
@@ -234,7 +234,7 @@
             height: 100%;
             background-color: rgba(0, 0, 0, 0.5);
             display: none;
-            z-index: 98;
+            z-index: 103;
         }
 
         .overlay.active {
@@ -935,7 +935,11 @@
         if (hamburgerBtn) {
             hamburgerBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
-                openSidebar();
+                if (sidebar.classList.contains('active')) {
+                    closeSidebar();
+                } else {
+                    openSidebar();
+                }
             });
         }
 
