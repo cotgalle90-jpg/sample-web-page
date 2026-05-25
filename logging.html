@@ -111,8 +111,9 @@
 
       main {
         flex: 1;
-        display: grid;
-        place-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 40px 20px;
       }
 
@@ -366,8 +367,9 @@
       </div>
     </header>
 
-    <main class="login-shell" aria-labelledby="login-title">
-      <section class="brand">
+    <main>
+      <div class="login-shell">
+        <section class="brand">
         <div class="brand__headline">
           <div class="brand__icon"><span>DX</span></div>
           <div>
@@ -415,6 +417,7 @@
       </section>
 
       <p class="footer">Secure login powered by industry-standard encryption • Your data is protected</p>
+      </div>
     </main>
 
     <footer>
