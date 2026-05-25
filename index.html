@@ -510,10 +510,73 @@
         footer {
             background-color: var(--secondary-color);
             color: #a0aec0;
-            text-align: center;
-            padding: 20px 0;
+            padding: 60px 0 20px 0;
             margin-top: 40px;
             font-size: 14px;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: left;
+        }
+
+        .footer-brand h3 {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 15px;
+        }
+
+        .footer-brand h3 span {
+            color: var(--primary-color);
+        }
+
+        .footer-brand p {
+            max-width: 300px;
+            line-height: 1.6;
+        }
+
+        .footer-contact h4 {
+            color: var(--white);
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .footer-contact ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-contact ul li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-contact ul li span {
+            font-size: 16px;
+        }
+
+        .footer-contact ul li a {
+            color: #a0aec0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-contact ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
         }
 
         /* --- Responsive Adjustments --- */
@@ -588,6 +651,10 @@
 
             .vehicle-details {
                 padding: 15px;
+            }
+
+            .footer-top {
+                flex-direction: column;
             }
         }
 
@@ -904,7 +971,23 @@
 
     <footer>
         <div class="footer-content container">
-            <p>&copy; 2026 DriveX Vehicle Marketplace. All Tech Rights Reserved.</p>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>Drive<span>X</span></h3>
+                    <p>ඔබේ සිහිනයේ වාහනය අදම සොයාගන්න. ශ්‍රී ලංකාවේ විශ්වාසවන්තම වාහන හුවමාරු වෙළඳපොළ.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><span>📞</span> <a href="tel:078945025">078945025</a></li>
+                        <li><span>✉️</span> <a href="mailto:cotgalle@gmail.com">cotgalle@gmail.com</a></li>
+                        <li><span>📘</span> <a href="https://www.facebook.com/2017cotgalle" target="_blank">Facebook Page</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DriveX Vehicle Marketplace. All Tech Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 
