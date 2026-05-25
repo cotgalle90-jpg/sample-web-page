@@ -716,7 +716,6 @@
         document.body.style.overflow = 'auto';
       };
 
-      // Function to open sidebar
       const openSidebar = () => {
         if (sidebar) sidebar.classList.add('active');
         if (overlay) overlay.classList.add('active');
@@ -724,7 +723,6 @@
         document.body.style.overflow = 'hidden';
       };
 
-      // Hamburger button click
       if (hamburgerBtn) {
         hamburgerBtn.addEventListener('click', (e) => {
           e.stopPropagation();
@@ -732,7 +730,6 @@
         });
       }
 
-      // Close button click
       if (sidebarClose) {
         sidebarClose.addEventListener('click', (e) => {
           e.preventDefault();
@@ -741,7 +738,6 @@
         });
       }
 
-      // Overlay click
       if (overlay) {
         overlay.addEventListener('click', (e) => {
           e.stopPropagation();
